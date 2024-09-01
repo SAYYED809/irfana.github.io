@@ -2,128 +2,185 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
 }
 
 html,body{
-    width: 100%;
     height: 100%;
-    overflow: hidden;
+    width: 100%;
 }
 
 #main{
-  height: 100%;  
-  width: 100%;
-  background: #ab8f97;
-  display: flex;
-}
-
-#part1{
     height: 100%;
-    width: 26%;
-    /*background: red;*/
-}
-
-#part2{
-    height: 100%;
-    width: 68%;
-    background: rgb(11, 12, 113);
-    background-image: url(https://images.unsplash.com/photo-1721206625310-5fe6854961d8?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: top;
-}
-
-#overlay{
-   height: 100%; 
-   width: 100%;
-   background-color:#897e8158 ;
-}
-
-#part3{
-    height: 100%;
-    width: 7%;
-    /*background: rgb(10, 154, 118);*/
-}
-
-#text-div{
-    /*height: 230px;*/
-    position: absolute;
-    width: 330px;
-    /*background-color: red;*/
-    left: 7%;
-    top: 50%;
-    transform: translate(0,-50%);
-}
-
-#text-div>h1{
-font-size: 75px;
-font-family: monument;
-font-weight: 800;
-line-height:58px;
-letter-spacing: 8px;
-text-transform: uppercase;
-color: #fff;
-}
-
-#small-img-div{
-    height: 400px;
-    width: 300px;
-    /*background-color: red;*/
-    background-image: url(https://images.unsplash.com/photo-1518518873111-6ca469aa4560?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-image: center;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(0, -50%);
-}
-
-#overlay-in{
-    height: 100%; 
-   width: 100%;
-   background-color:#897e8158 ;
-}
-
-#vertical-text{
-    position: absolute;
-    transform: rotate(90deg);
-    right: -48%;
-    transform-origin: 0% 0%;
-    top: -7%;
-    /*width: 100%;*/
-    /*background-color: red;*/
-
-    
-}
-#vertical-text h1{
-  font-size: 60px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: transparent;
-  letter-spacing: 12px;
-  font-family: monument;
-  -webkit-text-stroke-width:2px ;
-  -webkit-text-stroke-color:#fff ;
-  
-
+    width: 100%;
+    background-color: #111;
 }
 
 #nav{
-    position: absolute;
+    height: 120px;
+    width: 100%;
+    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 382px;
-    left: 5%;
-    top: 5%;
-    /*background-color: red;*/
 }
 
-#nav img {
-    height: 60px;
+#nav-prt2{
+    display: flex;
+    width: 62%;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+#nav h1{
+    font-size:20px ;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+#nav i{
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 #nav h5{
+   font-size: 14px;
+   font-weight: 600; 
+   text-transform: capitalize;
+}
+
+#nav img{
+    height: 50px;
+}
+
+#line{
+    width: 80px;
+    min-height: 2px;
+    background-color: red;
+}
+
+#content{
+    height: calc(100% - 120px);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left{
+    height: 100%;
+    width: 36%;
+    padding: 100px 80px;
+
+    
+}
+
+#center{
+    height: 100%;
+    width: 26%;
+   /* background-color: red;*/
+   padding-top: 60px;
+    
+}
+
+#right{
+    height: 100%;
+    width: 36%;
+    padding:220px 120px ;
+   
+}
+
+#left h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#left h1 span{
+    color: red;
+    font-weight: 500;
+}
+
+#left p{
+    margin-bottom: 40px;
+    font-size: 14px;
+    width: 60%;
+    line-height: 20px;
+}
+
+#left button{
+    background-color: red;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border-color: red;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#left button i{
+    margin-right: 10px;
+}
+
+#center-bg{
+    background-color: blue;
+    width: 100%;
+    height: 88%;
+    border-top-left-radius: 1000px;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-image: url(https://c0.wallpaperflare.com/preview/85/135/782/coca-cola-led-signage-thumbnail.jpg);
+    background-size: 300%;
+    background-position:30% 40% ;
+    filter: blur(2px);
+
+}
+
+#content>img{
+    height: 100%;
+    position: absolute;
+    left:49%;
+    z-index: 9;
+    transform: translate(-50%,0);
+}
+
+#right-elms{
+    width: 350px;
+}
+
+#elm1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom:1px solid #fff;
+}
+
+#elm1 h1{
     font-size: 20px;
-    color: #fff;
-    font-family: gilroy;
+    font-weight: 500;
+    opacity: 0.6;
+}
+ #elm1 i{
+    font-size: 20px;
+
+ }
+
+ #elm2 h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:12px ;
+    padding-top: 10px;
+}
+
+#elm2 p{
+   font-size: 10px; 
+   width: 70%;
+   opacity: 0.6;
 }
